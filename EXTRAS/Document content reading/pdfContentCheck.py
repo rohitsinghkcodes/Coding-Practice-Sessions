@@ -15,7 +15,7 @@ for files in dir_files:
         pdfReader = PyPDF2.PdfFileReader(f)
 
         #to print the no of pages in the pdf
-        no_of_pages = pdfReader.numPages;
+        no_of_pages = pdfReader.numPages
         print(f'Total no of pages in the pdf are: {no_of_pages}')
 
         #creating anothe robject for indivisual page selection 
