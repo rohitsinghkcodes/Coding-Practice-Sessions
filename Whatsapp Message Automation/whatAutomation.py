@@ -9,7 +9,7 @@ def inputFunc():
 
  
 def sendAutomated(ContactTo,message,timeHour,timeMin):
-    pywhatkit.sendwhatmsg(ContactTo,message,timeHour,timeMin)
+    pywhatkit.sendwhatmsg(ContactTo,message,timeHour,timeMin,wait_time=10,print_waitTime=True)
 
 if __name__ == "__main__":
     ContactTo,message,timeHour,timeMin = inputFunc()
