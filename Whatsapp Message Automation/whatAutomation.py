@@ -7,11 +7,17 @@ def inputFunc():
 
     return ContactTo,message,timeHour,timeMin
 
- 
-def sendAutomated(ContactTo,message,timeHour,timeMin):
+#This for sending the message to a person
+def sendPersonAutomated(ContactTo,message,timeHour,timeMin):
     pywhatkit.sendwhatmsg(ContactTo,message,timeHour,timeMin,wait_time=10,print_waitTime=True)
 
+#This for info from wiki
+def WikiInfo(topic):
+    pywhatkit.info(topic,lines=2)
+
+
 if __name__ == "__main__":
-    ContactTo,message,timeHour,timeMin = inputFunc()
-    sendAutomated(ContactTo,message,timeHour,timeMin)
+    #ContactTo,message,timeHour,timeMin = inputFunc()
+    #sendPersonAutomated(ContactTo,message,timeHour,timeMin)
+    WikiInfo('India')
     
