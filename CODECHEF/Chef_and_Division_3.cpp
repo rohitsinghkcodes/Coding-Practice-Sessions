@@ -13,6 +13,7 @@ int main()
     int tc;
     cin>>tc;
     while(tc--)
+    
     {
         LL n,k,d,sum=0;
         cin>>n>>k>>d;
