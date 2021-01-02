@@ -6,7 +6,7 @@
 #include<cmath>
 #include<numeric>
 #define LL long long
-using namespace std;
+
 
 int main()
 {
