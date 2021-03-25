@@ -1,3 +1,4 @@
+//UNSOLVED
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -10,21 +11,20 @@ int main()
     vector<vector<int>> v(n);
     for(int i=0; i<3; i++)
         {
-            for(int j=0; j<3; j++)
-                {
-                    cin>>v[i][j];    
-                }
+            vector<int> v2(3);
+            for(int &it:v2) cin>>it;
+
+            v.push_back(v2);  
                 
         }
 
         for(int i=0; i<3; i++)
         {
-            for(int j=0; j<3; j++)
-                {
-                    cout<<v[i][j]<<" ";    
-                }
-                cout<<endl;
+            
+            for(int &it:v[i]) cout<<it;      
         }
+
+        
 
     return 0;
 }
