@@ -1,16 +1,9 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main()
-{
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=1; i<=n; i++)
-        {
-            cin>>arr[i];
-        }   
-    int k=arr[n];
-    int i=n-1;
+
+void insertionSort1(int n, vector<int> arr) {
+    int k=arr[n-1];
+    int i=n-2;
     bool check=false;
     while(i>=-1 and check==false)
         {
@@ -26,12 +19,18 @@ int main()
                 i--;
                 check=true;
             }
-            for(int i=1; i<=n; i++)
-                {
-                    cout<<arr[i]<<" ";    
-                }
-            cout<<endl;  
-                
+            for(int &it:arr) cout<<it<<" ";
+            cout<<endl;
         }
+
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    vector<int> v(n);
+    for(int &it:v) cin>>it;
+    insertionSort1(n, v);
     return 0;
 }
