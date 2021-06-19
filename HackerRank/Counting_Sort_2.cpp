@@ -8,15 +8,13 @@ vector<int> countingSort(vector<int> arr) {
     {
         mp[it]++;
     }
-    for(int i=0; i<100; i++)
+    for(auto it=mp.begin();it!=mp.end();it++)
     {
-        if(mp[i]==0)
+        int fir = it->first;
+        int val = it->second;
+        while(val--)
         {
-            result.push_back(0);
-        }
-        else
-        {
-            result.push_back(mp[i]);
+            result.push_back(fir);
         }
     }
     return result;
@@ -30,6 +28,5 @@ int main()
     for(int &it:v) cin>>it;
     vector<int> result = countingSort(v);
     for(int &it:result) cout<<it<<" ";
-    //countingSort(v);
     return 0;
 }
