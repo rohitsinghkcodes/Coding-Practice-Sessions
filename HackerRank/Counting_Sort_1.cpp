@@ -3,12 +3,13 @@ using namespace std;
 
 vector<int> countingSort(vector<int> arr) {
     map<int,int> mp;
+    int no = *max_element(arr.begin(),arr.end());
     vector<int> result;
     for(int &it:arr)
     {
         mp[it]++;
     }
-    for(int i=0; i<100; i++)
+    for(int i=0; i<no+1; i++)
     {
         if(mp[i]==0)
         {
