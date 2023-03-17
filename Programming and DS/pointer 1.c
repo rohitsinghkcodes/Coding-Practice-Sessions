@@ -1,0 +1,12 @@
+#include<stdio.h>
+int  main()
+{
+    int x = 10;
+    int *y = &x;
+    printf("\n%d",x);
+    // printf("\n%d",y);
+    // printf("\n%d",*y);
+    // printf("\n%d",&y);
+    // printf("\n%d",&x);
+    return 0;
+}
